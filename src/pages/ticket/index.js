@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 const MainTicketPage = () => {
+  // probably gonna use Formik or something
+  // I hate doing 3 trillion use states
   const [formData, setFormData] = useState([]);
 
   // need to create options DB or json
