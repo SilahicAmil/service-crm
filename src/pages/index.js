@@ -5,6 +5,8 @@ const IndexPage = () => {
     <>
       <h1> Index Page</h1>
       <Link href="/dashboard">Dashboard</Link>
+      <br />
+      <Link href="/ticket">Ticket</Link>
     </>
   );
 };
