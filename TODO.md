@@ -1,0 +1,7 @@
+-- Add Form Library
+-- Add Styling (Figma File)
+-- Add Auth
+-- Add Redux or Context
+-- Add Ticket Form Submission
+-- Choose DB (probably gonna use planetscale)
+-- Maybe use a componenet library
