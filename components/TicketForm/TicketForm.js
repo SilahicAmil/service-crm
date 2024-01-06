@@ -4,8 +4,12 @@ const TicketForm = () => {
     initialValues: {
       serviceName: "",
     },
-    onSubmit: (values) => console.log(values),
+    onSubmit: (values) => submitFormData(values),
   });
+
+  const submitFormData = async (values) => {
+    console.log(values);
+  };
 
   return (
     <>
