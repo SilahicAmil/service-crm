@@ -1,5 +1,9 @@
 import { useFormik } from "formik";
+import { useState } from "react";
+
 const TicketForm = () => {
+  const [formStatus, setFormStatus] = useState("");
+
   const formik = useFormik({
     initialValues: {
       serviceName: "",
@@ -8,7 +12,13 @@ const TicketForm = () => {
   });
 
   const submitFormData = async (values) => {
-    console.log(values);
+    setFormStatus("pending");
+    try {
+      console.log(values);
+      setFormStatus("success");
+    } catch (err) {
+      setFormStatus("failed");
+    }
   };
 
   return (
